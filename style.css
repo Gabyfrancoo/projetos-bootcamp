@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  background-color: #388b5c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+article {
+  flex: 3;
+  min-width: 300px;
+}
+
+aside {
+  flex: 1;
+  min-width: 200px;
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;         /* Permite centralizar */
+  margin: 20px auto;      /* Centraliza a imagem */
+  width: 60%;             /* Reduz o tamanho proporcionalmente */
+  max-width: 400px;       /* Limita a largura máxima */
+  height: auto;           /* Mantém proporção */
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #388b5c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
