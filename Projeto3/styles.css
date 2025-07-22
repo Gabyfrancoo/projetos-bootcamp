@@ -1,0 +1,164 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.banner-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.banner button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+  background-color: #e85b50;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Seção “O que vou aprender?” */
+#course-content h2 {
+  color: #2575fc;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+#course-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Módulos */
+.modules-list {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.module {
+  background-color: #e1eaff;
+  padding: 20px;
+  flex: 1;
+  border-radius: 12px;
+  font-weight: 700;
+  color: #6a11cb;
+  min-width: 220px;
+}
+
+.module span {
+  color: #2575fc;
+}
+
+/* Seção “TRANSFORME O MUNDO...” */
+#transform-world {
+  background-color: #3b0f70;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 50px 0;
+}
+
+/* Seção desafios */
+#professional-challenges h2 {
+  color: #2575fc;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#professional-challenges img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto 25px auto;
+  border-radius: 10px;
+}
+
+#professional-challenges p {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+footer .dio-logo {
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
