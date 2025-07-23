@@ -1,0 +1,140 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #d495be;
+}
+
+/* Campo de pesquisa com botão de lupa */
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 600px;
+  margin: 0 20px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.search {
+  flex-grow: 1;
+  padding: 0 12px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  height: 100%;
+}
+
+.search-btn {
+  padding: 0 16px;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+  height: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.search-btn:hover {
+  background-color: #ddd;
+}
+
+.search-btn i {
+  color: #555;
+}
+
+.icons button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  border-radius: 4px;
+}
+
+.sidebar ul li:hover {
+  background-color: #eee;
+}
+
+/* Conteúdo principal */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #fafafa;
+  overflow-y: auto;
+}
+
+/* Cards dos vídeos */
+.video-card {
+  background-color: #d495be;
+  width: 300px;
+  height: 180px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
