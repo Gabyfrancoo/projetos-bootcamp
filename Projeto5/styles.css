@@ -1,0 +1,248 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container principal com flexbox */
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background-color: #2c2f33;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #202225;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container da logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+/* Logo */
+.logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Título sidebar */
+.sidebar h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Lista de navegação */
+.sidebar ul {
+  list-style: none;
+  flex-grow: 0; /* evita esticar */
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: #b9bbbe;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #7289da;
+}
+
+/* Perfil do usuário no rodapé */
+.user-profile {
+  margin-top: auto; /* empurra para o fim da sidebar */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #33373b;
+  cursor: pointer;
+}
+
+/* Ícone do usuário */
+.user-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #7289da; /* fallback se não tiver imagem */
+}
+
+/* Nome do usuário */
+.user-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #b9bbbe;
+  white-space: nowrap;
+}
+
+/* Container dos dois ícones ao lado do nome */
+.user-icons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Ícones de ação do usuário */
+.user-action-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  filter: brightness(85%);
+  transition: filter 0.3s;
+}
+
+.user-action-icon:hover {
+  filter: brightness(100%);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #36393f;
+}
+
+/* Header */
+.header {
+  padding: 20px;
+  border-bottom: 1px solid #202225;
+  font-weight: 600;
+  font-size: 1.3rem;
+
+  display: flex;
+  justify-content: space-between; /* espaço entre título e ícones */
+  align-items: center;
+}
+
+/* Container dos ícones do header */
+.header-icons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Ícones do header */
+.header-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: brightness(85%);
+  transition: filter 0.3s;
+}
+
+.header-icon:hover {
+  filter: brightness(100%);
+}
+
+/* Chat area */
+.chat-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  background-color: #40444b;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 60%;
+}
+
+/* Mensagem do usuário alinhada à direita */
+.message.user {
+  background-color: #7289da;
+  margin-left: auto;
+  max-width: 60%;
+}
+
+/* Chat input */
+.chat-input {
+  padding: 15px 20px;
+  border-top: 1px solid #202225;
+  display: flex;
+  gap: 10px;
+  background-color: #2c2f33;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.chat-input input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #7289da;
+}
+
+.chat-input button {
+  background-color: #7289da;
+  color: #fff;
+  border: none;
+  padding: 0 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.chat-input button:hover {
+  background-color: #5b6eae;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  .sidebar h2 {
+    display: none; /* Oculta o título para mais espaço */
+  }
+
+  .sidebar ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .sidebar ul li {
+    margin-bottom: 0;
+  }
+
+  .main-content {
+    flex: none;
+    height: calc(100vh - 50px);
+  }
+
+  .chat-input {
+    padding: 10px;
+  }
+}
